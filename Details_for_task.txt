@@ -1,0 +1,8 @@
+API Explanation:
+
+I try to hit API from selenium but probably due to restriction it did not give any response. However I have automated complete requirement which was mentioned in the task. I created manually screenshot attached in this
+project then I automated using request library with Python. I have also assert API responses.
+
+All the tasks details available in this project.
+
+For UI Automation I use Page Object Model technique for more readability and maintainability.  
