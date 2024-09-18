@@ -1,0 +1,25 @@
+Scenario: Successful checkout with valid payment details
+  Given a customer has added items to the cart
+  And the customer proceeds to checkout
+  When the customer enters valid payment details
+  And confirms the purchase
+  Then the order should be placed successfully
+  And the customer should receive an order confirmation
+
+Checkout with Invalid Payment
+
+Scenario: Checkout fails with invalid payment details
+  Given a customer has added items to the cart
+  And the customer proceeds to checkout
+  When the customer enters invalid payment details
+  And attempts to confirm the purchase
+  Then the system should display an error message for invalid payment
+  And the order should not be placed
+
+  Checkout with Empty Cart
+
+  Scenario: Attempt to checkout with an empty cart
+  Given a customer has no items in their cart
+  When the customer tries to proceed to checkout
+  Then the system should display a message indicating the cart is empty
+  And the customer should not be able to proceed to payment
