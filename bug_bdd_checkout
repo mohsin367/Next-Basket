@@ -1,0 +1,18 @@
+Bug No 1
+Scenario: Checkout not displaying correct items
+  Given a customer has added five items to the cart
+  And the customer proceeds to checkout
+  When the customer enters five same items to the cart
+  Then the system should display count five items in one row
+  But the 3 items are showing separately
+  And 2 items are visible separately
+
+
+Bug No 2
+Scenario: Checkout not displaying any card or payment information
+    Given a customer added items to cart
+    And the customer proceed to checkout
+    When Customer added 2 items for same product
+    Then the system should display payment information
+    But the system take customer to another window(Login) without displaying anything
+
