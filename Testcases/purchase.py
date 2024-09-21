@@ -1,12 +1,10 @@
 import os
 import time
-
 import pyautogui
 import pytest
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
-
-from Object.objects import App_Data
+from Object.locators import App_Data
 from Utilities.utilities_file import Baseclass
 
 

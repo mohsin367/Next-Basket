@@ -4,12 +4,11 @@ import time
 import allure
 import pyautogui
 from datetime import datetime
-
 from selenium.common import *
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from Object.objects import App_Data
+from Object.locators import App_Data
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -72,8 +71,6 @@ class Baseclass:
         e_text = driver.find_element(By.XPATH, path).text
         return e_text
 
-
-
     @staticmethod
     def xpath_value_check(driver, path):
         driver.find_element(By.XPATH, path)
@@ -109,23 +106,6 @@ class Baseclass:
     @staticmethod
     def stop_check():
         pyautogui.alert(text='Stopped! Please check.')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @staticmethod
