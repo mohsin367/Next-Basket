@@ -1,5 +1,5 @@
 import requests
-from Object.objects import App_Data
+from Object.locators import App_Data
 
 
 headers = {

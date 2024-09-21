@@ -1,5 +1,4 @@
 import time
-
 import pyautogui
 import pytest
 from selenium import webdriver
